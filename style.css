@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.p-logo {
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 700;
+    color: royalblue;
+}
+
+.proj-nav {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-out;
+}
+
+.proj-nav:hover {
+    color: royalblue;
+}
+
+.primary-navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.header-nav .social-icon:hover {
+    transform: scale(1.1);
+}
+
+.github-icon .social-icon {
+    fill: #000;
+}
+
+.twitter-icon .social-icon {
+    fill: #03a9f4;
+}
+
+.linkedin-icon .social-icon {
+    fill: #0288d1;
+}
+
+main {
+    padding: 0 80px;
+}
+
+/* hero section */
+
+.hero-container {
+    padding: 170px 100px 170px;
+}
+
+.hero-intro {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.name {
+    font-weight: 600;
+    color: royalblue;
+}
+
+h1 {
+    color: royalblue;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+.hero-container p {
+    line-height: 1.5;
+    letter-spacing: 0.9px;
+    font-weight: 500;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.contact-me {
+    max-width: max-content;
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    color: #1d1d1d;
+    border-bottom: 3px solid royalblue;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.royalblue {
+    color: royalblue;
+}
+
+.skills-container {
+    margin-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+}
+
+.skills-list li {
+    font-weight: 800;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.html-text {
+    color: #e65100;
+}
+
+.css-text {
+    color: #0277bd;
+}
+
+.js-text {
+    color: #ffd600;
+}
+
+.rjs-text {
+    color: #149eca;
+}
+
+.git-text {
+    color: #f4511e;
+}
+
+/* projects section */
+
+.projects-container {
+    margin-top: 80px;
+    padding: 30px 0 100px;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.projects-list li {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #1d1d1d;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.1);
+}
+
+.projects-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-container {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+}
+
+.box-bottom {
+    height: calc(100% - 220px);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-name h3 {
+    color: #e5e5e5;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 15px auto 0;
+}
+
+.project-name a:hover {
+    text-decoration: underline;
+}
+
+.projects-list p {
+    color: #a1a1a1;
+    margin-bottom: 15px;
+}
+
+.links {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    font-family: inherit;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #1d1d1d;
+    border: 1px solid rgb(70, 70, 70);
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.links a:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+/* cta */
+
+.cta-container {
+    background-color: #fff;
+}
+
+.cta-card {
+    text-align: center;
+    display: inline-block;
+    margin: 0 5% -50%;
+    width: 90%;
+    background-color: royalblue;
+    color: #fff;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-card h2 {
+    margin: 0;
+    text-transform: none;
+}
+
+.git-nav {
+    gap: 45px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 30px;
+    aspect-ratio: 1;
+    fill: #fff;
+    transition: fill 0.3s ease-out;
+}
+
+.git-nav a:is(:hover, :focus) .social-icon {
+    fill: #000;
+}
+
+.footer-container {
+    background-color: #1d1d1d;
+    padding: 100px 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-nav {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.p-nav a {
+    list-style: none;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.p-nav a:hover {
+    opacity: 0.8;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+button:focus,
+button:active {
+    outline: none;
+}
+
+@media (max-width: 50em) {
+    .header-container {
+        padding: 10px 30px;
+    }
+
+    .p-logo {
+        font-size: 24px;
+    } 
+
+    .proj-nav,
+    .header-nav {
+        display: none;
+    }
+
+    main {
+        padding: 0 30px;
+    }
+
+    .hero-container {
+        padding: 100px 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .cta-card {
+        margin: 0 0 -50%;
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 32em) {
+    main {
+        padding: 0 10px;
+    }
+
+    .projects-list li {
+        margin: 0 0 30px 0;
+    }
+}

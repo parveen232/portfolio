@@ -9,9 +9,16 @@ projects = [
     {
         image: "https://github.com/parveen232/iCodeThis/raw/main/ss-desktop.png",
         title: "iCodeThis",
-        description: "Build some projects with design inspiration from uidesigndaily, through iCodeThis challenge.",
+        description: "Built some projects with design inspiration from uidesigndaily, through iCodeThis challenge.",
         github: "https://github.com/parveen232/iCodeThis",
         live: "https://icodethis.netlify.app/"
+    },
+    {
+        image: "https://github.com/parveen232/ecommerce/raw/main/ss-desktop.png",
+        title: "ecommerce",
+        description: "An eCommerce application built with React.js",
+        github: "https://github.com/parveen232/ecommerce",
+        live: "https://ecommerce-p232.netlify.app/"
     }
 ]
 
@@ -23,13 +30,13 @@ projects.forEach(({ image, title, description, github, live }) => {
 
     listItem.innerHTML = `
                 <div class="img-container">
-                    <a href="${live}">
+                    <a href="${live}" target="_blank">
                         <img src="${image}" alt="image">
                     </a>
                 </div>
                 <div class="box-bottom">
                     <div class="project-name">
-                        <a href="${live}">
+                        <a href="${live}" target="_blank">
                             <h3>${title}</h3>
                         </a>
                     </div>
@@ -37,11 +44,11 @@ projects.forEach(({ image, title, description, github, live }) => {
                         <p>${description}</p>
                     </div>
                     <div class="links">
-                        <a href="${github}">
+                        <a href="${github}" target="_blank">
                             <img src="./images/icon-github.svg" alt="icon-github">
                             GitHub
                         </a>
-                        <a href="${live}">
+                        <a href="${live}" target="_blank">
                             <img src="./images/icon-link.svg" alt="icon-link">
                             Live Demo
                         </a>

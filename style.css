@@ -145,24 +145,28 @@ h2 {
     transition: all 0.5s ease-out;
 }
 
-.html-text {
+.html-clr {
     color: #e65100;
 }
 
-.css-text {
+.css-clr {
     color: #0277bd;
 }
 
-.js-text {
+.js-clr {
     color: #ffd600;
 }
 
-.rjs-text {
+.rjs-clr {
     color: #149eca;
 }
 
-.git-text {
+.git-clr {
     color: #f4511e;
+}
+
+.njs-clr {
+    color: #fff;
 }
 
 /* projects section */
@@ -181,6 +185,8 @@ h2 {
 }
 
 .projects-list li {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     margin: 20px;
     padding: 20px;
@@ -197,7 +203,7 @@ h2 {
 .img-container {
     border-radius: 8px;
     overflow: hidden;
-    height: 220px;
+    height: 190px;
     width: 100%;
 }
 
@@ -214,7 +220,7 @@ h2 {
 }
 
 .box-bottom {
-    height: calc(100% - 220px);
+    height: calc(100% - 190px);
     display: flex;
     flex-direction: column;
 }
@@ -223,7 +229,7 @@ h2 {
     color: #e5e5e5;
     font-weight: 500;
     font-size: 24px;
-    margin: 15px auto 0;
+    margin: 10px auto;
 }
 
 .project-name a:hover {
@@ -232,11 +238,22 @@ h2 {
 
 .projects-list p {
     color: #a1a1a1;
-    margin-bottom: 15px;
+    margin: 0 0 15px;
+}
+
+.tech-links {
+    margin-top: auto;
+}
+
+.tech-container {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .links {
-    margin-top: auto;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -256,6 +273,24 @@ h2 {
 
 .links a:hover {
     background-color: rgb(35, 35, 35);
+}
+
+.sb-container {
+    display: flex;
+    justify-content: center;
+}
+
+.show-btn {
+    cursor: pointer;
+    background-color: royalblue;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.show-btn:hover {
+    background-color: rgb(83, 116, 217);
 }
 
 /* cta */

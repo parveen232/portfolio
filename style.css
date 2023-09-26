@@ -121,6 +121,9 @@ h1 {
 
 .skills-container {
     margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -131,6 +134,7 @@ h2 {
 }
 
 .skills-list {
+    max-width: 900px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +153,24 @@ h2 {
     transition: all 0.5s ease-out;
 }
 
+.skills-list li img {
+    width: 64px;
+    height: 64px;
+}
+
+.pmicon-container {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pmicon-container img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
 .html-clr {
     color: #e65100;
 }
@@ -157,20 +179,36 @@ h2 {
     color: #0277bd;
 }
 
+.tcss-clr {
+    color: #00acc1;
+}
+
 .js-clr {
     color: #ffd600;
+}
+
+.ts-clr {
+    color: #1976d2;
 }
 
 .rjs-clr {
     color: #149eca;
 }
 
+.njs-clr {
+    color: #212121;
+}
+
 .git-clr {
     color: #f4511e;
 }
 
-.njs-clr {
-    color: #fff;
+.pm-clr {
+    color: #ff6c37;
+}
+
+.figma-clr {
+    color: #7c4dff;
 }
 
 /* projects section */
